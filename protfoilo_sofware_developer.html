@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bresto K Benny – Software Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f5;--surface:#fff;--ink:#14213d;--muted:#5a6578;--line:#cdd5e0;--box:#e8a317;--accent:#0b6bcb;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10151f;--surface:#171e2b;--ink:#eaeef5;--muted:#9aa6ba;--line:#2a3447;--box:#f2b632;--accent:#5aa7f5}}
+:root[data-theme="dark"]{--bg:#10151f;--surface:#171e2b;--ink:#eaeef5;--muted:#9aa6ba;--line:#2a3447;--box:#f2b632;--accent:#5aa7f5}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+nav{display:flex;gap:22px;justify-content:flex-end;padding:20px 0;font-weight:500}
+nav a{color:var(--ink);text-decoration:none}
+nav a:hover{color:var(--accent)}
+.hero{padding:40px 0 72px}
+.frame{position:relative;display:inline-block;padding:18px 26px;border:3px solid var(--box);margin:28px 0 20px}
+.frame h1{font-size:clamp(44px,9vw,92px);font-weight:800;letter-spacing:-.02em}
+.tag{position:absolute;top:-3px;left:-3px;transform:translateY(-100%);background:var(--box);color:#14213d;font:500 13px/1 "IBM Plex Sans",sans-serif;padding:6px 9px}
+.dist{position:absolute;bottom:-3px;right:-3px;transform:translateY(100%);background:var(--box);color:#14213d;font:500 13px/1 "IBM Plex Sans",sans-serif;padding:6px 9px}
+.hero p{max-width:60ch;font-size:19px;margin:34px 0 0}
+.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-block;padding:11px 20px;border:2px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:500;border-radius:4px}
+.btn.main{background:var(--ink);color:var(--bg)}
+.btn:hover{border-color:var(--accent)}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:34px;font-weight:700;margin-bottom:28px}
+.proj{display:grid;gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);padding:26px 28px}
+.card h3{font-size:24px;font-weight:700}
+.card .sub{color:var(--muted);margin:4px 0 14px}
+.card ul{margin:0;padding-left:20px}
+.card li{margin:6px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chips span{border:1px solid var(--line);padding:3px 11px;border-radius:99px;font-size:14px;color:var(--muted)}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skills span{background:var(--surface);border:1px solid var(--line);padding:8px 16px;font-weight:500}
+.tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:3px solid var(--box)}
+.tl li{margin:0 0 26px;position:relative}
+.tl li::before{content:"";position:absolute;left:-30px;top:8px;width:11px;height:11px;background:var(--box)}
+.tl b{font-family:"Bricolage Grotesque",sans-serif;font-size:20px}
+.tl small{display:block;color:var(--muted)}
+.two{display:grid;gap:40px;grid-template-columns:1fr 1fr}
+@media (max-width:720px){.two{grid-template-columns:1fr}nav{justify-content:flex-start;flex-wrap:wrap}}
+footer{padding:40px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.frame{animation:snap .7s ease-out both}@keyframes snap{from{border-color:transparent;transform:scale(1.04)}to{border-color:var(--box);transform:none}}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+<div class="frame"><span class="tag">developer 0.98</span><h1>Bresto K Benny</h1><span class="dist">Kerala, India</span></div>
+<p>Computer Science graduate who builds Python software: attendance systems, document analysis tools and real-time computer vision. I’m looking for a Software Engineer role where I can ship useful projects and keep learning.</p>
+<div class="links">
+<a class="btn main" href="#contact">Get in touch</a>
+<a class="btn" href="https://github.com/Bresto144" rel="noopener">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/bresto-k-benny" rel="noopener">LinkedIn</a>
+</div>
+</header>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="proj">
+<article class="card">
+<h3>EduGuard</h3><p class="sub">AI-based anti-class bunking system</p>
+<ul>
+<li>Python attendance system that automates student identification and attendance tracking.</li>
+<li>Student and attendance records stored and managed in Supabase.</li>
+<li>Modules for attendance monitoring, duty leave management, and role-based alerts for teachers and administrators.</li>
+</ul>
+<div class="chips"><span>Python</span><span>Supabase</span></div>
+</article>
+<article class="card">
+<h3>Loan Document Intelligence</h3><p class="sub">Loan analysis system</p>
+<ul>
+<li>Extracts loan information from PDF, DOCX and TXT documents and turns it into structured data.</li>
+<li>Validates data and checks for missing or inconsistent details.</li>
+<li>Evaluates affordability, compares loans and recommends options based on user preferences.</li>
+</ul>
+<div class="chips"><span>Python</span><span>Document processing</span><span>Financial analysis</span></div>
+</article>
+<article class="card">
+<h3>Blind Assistant</h3><p class="sub">Real-time object detection for visually impaired users</p>
+<ul>
+<li>Detects and names objects through a laptop camera, with bounding boxes and confidence scores.</li>
+<li>Estimates approximate distance from object size and shows it on the live video feed.</li>
+</ul>
+<div class="chips"><span>Python</span><span>OpenCV</span><span>YOLO</span></div>
+</article>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills"><span>Python</span><span>Object-Oriented Programming</span><span>DBMS</span><span>Problem solving</span><span>OpenCV</span><span>YOLO</span><span>Supabase</span></div>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<ul class="tl">
+<li><b>Data Science Intern, SMEC Technologie</b><small>June 2026 – present</small></li>
+<li><b>Golden Bird Learning</b><small>Feb 2025 – May 2025</small>Built a basic understanding of algorithms and logical thinking using Python.</li>
+</ul>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<ul class="tl">
+<li><b>B.Tech in Computer Science</b><small>Sahrdaya College of Engineering and Technology, Kodakara, Thrissur · Kerala Technical University · Oct 2022 – June 2026</small></li>
+<li><b>Higher Secondary, Computer Science</b><small>St. Sebastian HSS Kuttikad · Kerala State Board · Jun 2019 – Mar 2021</small></li>
+</ul>
+</section>
+
+<section id="contact">
+<div class="two">
+<div>
+<h2>Contact</h2>
+<p>Open to software engineering roles and project work.</p>
+<p><a href="mailto:bresto2003@gmail.com">bresto2003@gmail.com</a></p>
+</div>
+<div>
+<h2>Outside code</h2>
+<p>Music, reading and working out.</p>
+</div>
+</div>
+</section>
+<footer>© 2026 Bresto K Benny</footer>
+</div>
+</body>
+</html>
